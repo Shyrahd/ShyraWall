@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./assets/s_logo_round.png" />
+    <script defer src="form.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+        <a href="index.html" class="home-button">
+              <img src="./assets/home-icon.png" alt="Home" />
+          </div>
+          
+        </a>
+        <h1>Shyra Wall</h1>
+      </nav>
+      <header class="header-card">
+        <a href="index.html">
+          <img class="round-img" src="./assets/s_logo.jpg" alt="Logo" />
+        </a>
+        <div class="header-content">
+          <h1 class="header-title">Welcome to Shyra Wall</h1>
+          <h4 class="header-subtitle">Explore the Best Art</h4>
+        </div>
+        <a href="https://www.wallpaperflare.com/" target="_blank">
+          <img
+            class="round-img"
+            src="./assets/wallpaper_flare.jpg"
+            alt="WallpaperFlare"
+          />
+        </a>
+      </header>
+
+    <main class="feedback-form">
+      <form id="formFeedback">
+        <div class="form-card">
+          <label for="category">Feedback About</label>
+          <select id="category" required>
+            <option value="">-- Choose a topic --</option>
+            <option value="Website">Website</option>
+            <option value="Gallery">Gallery</option>
+            <option value="Navigation">Navigation</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-card">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-card">
+          <label for="message">Feedback</label>
+          <textarea
+            id="message"
+            placeholder="Write your feedback..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-card">
+          <button type="submit">Submit Feedback</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+        <div class="footer-card">
+          <div class="footer-nav-card" onclick="location.href='form.html'">
+            <h3>Form</h3>
+          </div>
+          <div class="footer-nav-card" onclick="location.href='stat.html'">
+            <h3>Statistics</h3>
+          </div>
+          <div class="footer-nav-card" onclick="location.href='profile.html'">
+            <h3>Profile</h3>
+          </div>
+          <div class="footer-nav-card" onclick="location.href='list.html'">
+            <h3>More About Us</h3>
+          </div>
+        </div>
+        <div class="copyright-bar">
+          &copy; 2025 Shyra Wall. All rights reserved.
+        </div>
+      </footer>
+  </body>
+</html>

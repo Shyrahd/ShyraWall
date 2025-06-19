@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information - Shyra Wall</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./assets/s_logo_round.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="home-button">
+            <img src="./assets/home-icon.png" alt="Home" />
+        </div>
+        
+      </a>
+      <h1>Shyra Wall</h1>
+    </nav>
+
+    <header class="header-card">
+      <a href="index.html">
+        <img class="round-img" src="./assets/s_logo.jpg" alt="Shyra Logo" />
+      </a>
+      <div class="header-content">
+        <h1 class="header-title">Explore Shyra Wall</h1>
+        <h4 class="header-subtitle">More Information About Us</h4>
+      </div>
+      <a href="https://www.wallpaperflare.com/" target="_blank">
+        <img
+          class="round-img"
+          src="./assets/wallpaper_flare.jpg"
+          alt="Partner"
+        />
+      </a>
+    </header>
+
+    <main class="content-section">
+      <!-- Dropdown Sections -->
+      <div class="dropdown-list">
+        <button class="dropdown-toggle" aria-expanded="false">Design</button>
+        <div class="dropdown-content">
+          <ul>
+            <li>
+              Available Designs:
+              <ol>
+                <li>Modern Abstract</li>
+                <li>Elegant Minimalism</li>
+                <li>Medieval Legend</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown-list">
+        <button class="dropdown-toggle" aria-expanded="false">Partner</button>
+        <div class="dropdown-content">
+          <ul>
+            <li>
+              <a href="https://www.wallpaperflare.com/" target="_blank"
+                >Wallpaper Flare</a
+              >
+            </li>
+            <li>
+              <a href="https://www.pexels.com/" target="_blank">Pexels</a>
+            </li>
+            <li>
+              <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            </li>
+            <li>
+              <a href="https://www.pixabay.com/" target="_blank">Pixabay</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown-list">
+        <button class="dropdown-toggle" aria-expanded="false">Founder</button>
+        <div class="dropdown-content">
+          <dl>
+            <dt>Tri Aji Alhuda <a href="profile.html">[Profile]</a></dt>
+            <dd>
+              Founder and designer of Shyra Wall. A digital artist and developer
+              from POLSRI's Manajemen Informatika D4.
+            </dd>
+            <dt>Shyra</dt>
+            <dd>
+              Conceptual identity and creative branding behind the platform’s
+              name and spirit.
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="dropdown-list">
+        <button class="dropdown-toggle" aria-expanded="false">Social</button>
+        <div class="dropdown-content">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/aji_alhd/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://wa.me/+6283173201972" target="_blank"
+                >WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/tri-aji-alhuda/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-card">
+        <div class="footer-nav-card" onclick="location.href='form.html'">
+          <h3>Form</h3>
+        </div>
+        <div class="footer-nav-card" onclick="location.href='stat.html'">
+          <h3>Statistics</h3>
+        </div>
+        <div class="footer-nav-card" onclick="location.href='profile.html'">
+          <h3>Profile</h3>
+        </div>
+        <div class="footer-nav-card" onclick="location.href='list.html'">
+          <h3>More About Us</h3>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        &copy; 2025 Shyra Wall. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".dropdown-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+          const parent = button.parentElement;
+          const expanded = button.getAttribute("aria-expanded") === "true";
+          button.setAttribute("aria-expanded", !expanded);
+          parent.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
