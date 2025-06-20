@@ -26,6 +26,18 @@ body {
   cursor: pointer;
 }
 
+.about-button {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.about-button img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 .navbar h1 {
   margin: 0;
   color: white;
