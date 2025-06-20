@@ -11,38 +11,55 @@ body {
   top: 0;
   z-index: 1000;
   background-color: #2a2a2a;
-  padding: 20px;
-  text-align: center;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.home-button {
-  position: absolute;
-  left: 10px;
+.nav-left {
+  display: flex;
 }
 
-.home-button img {
+.nav-left img {
   width: 30px;
   height: 30px;
-  cursor: pointer;
+  margin: auto;
+  padding-right: 10px;
 }
 
-.about-button {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-}
-
-.about-button img{
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.navbar h1 {
-  margin: 0;
+.nav-left h1 {
+  margin: auto;
   color: white;
+  font-family: "Segoe Script", cursive;
 }
 
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-right a:hover {
+  background-color: #616161;
+}
+
+.nav-right a img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
 /* Header */
 .header-card {
   background-image: url("./assets/modern_8.jpg");
@@ -67,6 +84,7 @@ body {
 .header-content {
   text-align: center;
   flex-grow: 1;
+  font-family: "Segoe Script", cursive;
 }
 
 .header-title {
@@ -92,6 +110,7 @@ body {
 
 .gallery-card {
   position: relative;
+
   width: 600px;
   height: 400px;
   border-radius: 10px;
