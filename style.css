@@ -18,8 +18,6 @@ body {
 .home-button {
   position: absolute;
   left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .home-button img {
@@ -86,8 +84,11 @@ body {
   height: 400px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #2a2a2a;
   transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
 }
 
 .gallery-card img {
@@ -96,14 +97,10 @@ body {
   object-fit: cover;
 }
 
-.gallery-card:hover {
-  transform: scale(1.05);
-}
-
 .gallery-title {
   position: absolute;
-  bottom: 0;
   width: 100%;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px;
@@ -119,8 +116,7 @@ body {
   left: 10px;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 5px;
-  border-radius: 50%;
-  z-index: 5;
+  border-radius: 100%;
   transition: background-color 0.3s ease;
 }
 
@@ -136,13 +132,12 @@ body {
 /* Footer */
 footer {
   background-color: #2a2a2a;
-  padding: 20px 10px;
+  padding: 20px;
   margin-top: 20px;
 }
 
 .footer-card {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
@@ -269,7 +264,7 @@ table {
 
 th,
 td {
-  padding: 1rem;
+  padding: 20px;
   text-align: center;
   border-bottom: 1px solid #444;
 }
